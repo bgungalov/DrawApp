@@ -1,25 +1,25 @@
-import java.awt.BasicStroke; 			// describe the shape of the mark made by a pen drawn
-import java.awt.Color; 				// refers to a fine named Color.class
-import java.awt.Graphics; 			// abstarct super class for all graphic contexts
-import java.awt.Graphics2D; 			// abstarct super class for 2D graphic contexts
-import java.awt.event.ActionEvent; 		// this event passed to every ActionListener object that registered
-import java.awt.event.ActionListener; 		// this event passed to every ActionListener object that registered using addActionListener
-import java.awt.event.MouseEvent; 		// this event indicates that a mouse action required a component
-import java.awt.event.MouseListener; 		// receiving an event from the mouse
-import java.awt.event.MouseMotionListener;	// is used for receiving mouse motion event on a component
+import java.awt.BasicStroke; 			
+import java.awt.Color; 				
+import java.awt.Graphics; 			
+import java.awt.Graphics2D; 			
+import java.awt.event.ActionEvent; 		
+import java.awt.event.ActionListener; 		
+import java.awt.event.MouseEvent; 		
+import java.awt.event.MouseListener; 		
+import java.awt.event.MouseMotionListener;	
 import java.awt.image.BufferedImage;
-import javax.swing.ButtonGroup; 		// is used to create a multiple exclusion scope for a set of buttons
-import javax.swing.ImageIcon; 			// an implementation of the icon interface from images
-import javax.swing.JButton; 			// an implemenetation of a push button
-import javax.swing.JColorChooser;		// provides a pane of controls designed to allow a user to manipulate and select a color
-import javax.swing.JFrame; 			// support swing component
-import javax.swing.JMenu; 			// an implementation of an item in a menu
-import javax.swing.JMenuBar; 			// an implementation of a menu bar
-import javax.swing.JMenuItem; 			// an implementation of a menu item
+import javax.swing.ButtonGroup; 		
+import javax.swing.ImageIcon; 			
+import javax.swing.JButton; 			
+import javax.swing.JColorChooser;		
+import javax.swing.JFrame; 			
+import javax.swing.JMenu; 			
+import javax.swing.JMenuBar; 			
+import javax.swing.JMenuItem; 			
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
-import javax.swing.JTextArea; 		// an implementation of a radio button
+import javax.swing.JTextArea; 		
 
 public class DrawApp extends JPanel implements MouseListener, ActionListener, MouseMotionListener 				// receiving an event from mouse
 {
@@ -203,12 +203,12 @@ public class DrawApp extends JPanel implements MouseListener, ActionListener, Mo
 			about.setVisible(true);
 		}
 
-		if (e.getActionCommand().equals("Empty Rect"))				// action when user choose Empt Rect
+		if (e.getActionCommand().equals("Empty Rect"))				// action when user choose Empty Rect
 		{
 			choice = 1;
 		}
 
-		if (e.getActionCommand().equals("Empty oval")) 				// action when user choose Empt Oval
+		if (e.getActionCommand().equals("Empty oval")) 				// action when user choose Empty Oval
 		{
 			choice = 2;
 		}
