@@ -17,7 +17,9 @@ import javax.swing.JMenu; 			// an implementation of an item in a menu
 import javax.swing.JMenuBar; 			// an implementation of a menu bar
 import javax.swing.JMenuItem; 			// an implementation of a menu item
 import javax.swing.JPanel;
-import javax.swing.JRadioButton; 		// an implementation of a radio button
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+import javax.swing.JTextArea; 		// an implementation of a radio button
 
 public class DrawApp extends JPanel implements MouseListener, ActionListener, MouseMotionListener 				// receiving an event from mouse
 {
@@ -36,7 +38,7 @@ public class DrawApp extends JPanel implements MouseListener, ActionListener, Mo
 	DrawApp() 							// constructor which is MainFile
 	{
 
-		JFrame frame = new JFrame("DrawApp");			// the title of program is set as My Drawing
+		JFrame frame = new JFrame("DrawApp");			// the title of program is set as DrawApp
 		frame.setSize(1200, 800);					// the size of the frame is set to 1200w, 800h
 
 		frame.setBackground(BACKGROUND_COLOR); 				// this will set the background color
@@ -69,7 +71,7 @@ public class DrawApp extends JPanel implements MouseListener, ActionListener, Mo
 
 		ButtonGroup lineOption = new ButtonGroup();
 		lineOption.add(medium); 					// line for medium
-		lineOption.add(thick); 						// line for thick
+		lineOption.add(thick);
 
 		this.add(b1);
 		this.add(color);
@@ -197,7 +199,7 @@ public class DrawApp extends JPanel implements MouseListener, ActionListener, Mo
 			JFrame about = new JFrame("About");
 			about.setSize(300, 300);
 			JButton picture = new JButton(new ImageIcon("logo.png"));
-			about.add(picture);
+			about.getContentPane().add(picture);
 			about.setVisible(true);
 		}
 
